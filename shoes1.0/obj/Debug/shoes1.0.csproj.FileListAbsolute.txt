@@ -1,0 +1,7 @@
+c:\users\andrij garnytskyi\source\repos\shoes1.0\shoes1.0\bin\Debug\shoes1.0.exe.config
+c:\users\andrij garnytskyi\source\repos\shoes1.0\shoes1.0\bin\Debug\shoes1.0.exe
+c:\users\andrij garnytskyi\source\repos\shoes1.0\shoes1.0\bin\Debug\shoes1.0.pdb
+c:\users\andrij garnytskyi\source\repos\shoes1.0\shoes1.0\obj\Debug\shoes1.0.csprojResolveAssemblyReference.cache
+c:\users\andrij garnytskyi\source\repos\shoes1.0\shoes1.0\obj\Debug\shoes1.0.csproj.CoreCompileInputs.cache
+c:\users\andrij garnytskyi\source\repos\shoes1.0\shoes1.0\obj\Debug\shoes1.0.exe
+c:\users\andrij garnytskyi\source\repos\shoes1.0\shoes1.0\obj\Debug\shoes1.0.pdb
