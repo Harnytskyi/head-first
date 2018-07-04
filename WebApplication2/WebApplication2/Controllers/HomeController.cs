@@ -10,6 +10,11 @@ namespace WebApplication2.Controllers
     public class HomeController : Controller
     {
         BookContext db = new BookContext();
+        
+        public string GetNumber(int id)
+        {
+            return id.ToString();
+        }
 
         public ActionResult Index()
         {
