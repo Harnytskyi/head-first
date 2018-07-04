@@ -9,6 +9,14 @@
 
 </head>
 <body>
+    <div>
+    @if (IsSectionDefined("menu"))
+    {
+        @RenderSection("menu")
+    }
+    else
+    {
+
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -21,17 +29,20 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("MY PROFILE", "About", "Home")</li>
                     <li>@Html.ActionLink("VACATION REQUEST", "Contact", "Home")</li>
                 </ul>
-                @*@Html.Partial("_LoginPartial")*@
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
+
     <div class="container body-content">
+        </div>
+    }
         @RenderBody()
-        
+
 
     </div>
 

@@ -26,5 +26,9 @@ namespace Vacation_0._1.Controllers
 
             return View();
         }
+        public ActionResult Loglog()
+        {
+            return View();
+        }
     }
 }
