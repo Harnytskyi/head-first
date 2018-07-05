@@ -25,4 +25,14 @@ textarea {
 
 #login {
     text-align: center;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.formlogin-group {
+    margin-bottom: 15px;
+}
+
+
+
