@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    /*background-color: #333;*/
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,6 +25,13 @@ textarea {
     max-width: 280px;
 }
 
+.bg {
+    background-image: url('/Content/Images/login_pages_background.png');
+    
+    width: 100%;
+    height: auto;
+}
+
 #login {
     text-align: center;
     width: 280px;
@@ -33,6 +42,98 @@ textarea {
 .formlogin-group {
     margin-bottom: 15px;
 }
+/* RADIOBUTTON-------------------------- */
 
+.radiobutcontainer {
+    position: relative;
+    padding-left: 20px;
+    /*margin-bottom: 40px;*/
+}
 
+.radiobutcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmarkgreen {
+    margin: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #777;
+}
+
+.radiobutcontainer:hover input ~ .checkmarkgreen {
+    background-color: transparent;
+}
+
+.radiobutcontainer input:checked ~ .checkmarkgreen {
+    background-color: transparent;
+}
+
+.checkmarkgreen:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radiobutcontainer input:checked ~ .checkmarkgreen:after {
+    display: block;
+}
+
+.radiobutcontainer .checkmarkgreen:after {
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2cf6b8;
+
+}
+
+/* checkmarkred------ */
+
+.checkmarkred {
+    margin: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #777;
+}
+
+.radiobutcontainer:hover input ~ .checkmarkred {
+    background-color: transparent;
+}
+
+.radiobutcontainer input:checked ~ .checkmarkred {
+    background-color: transparent;
+}
+
+.checkmarkred:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radiobutcontainer input:checked ~ .checkmarkred:after {
+    display: block;
+}
+
+.radiobutcontainer .checkmarkred:after {
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ea6676;
+}
 
