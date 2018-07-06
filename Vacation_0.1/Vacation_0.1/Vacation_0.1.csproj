@@ -210,6 +210,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Icon\logo_softheme.svg" />
     <Content Include="Content\Icon\password_icon.svg" />
     <Content Include="Content\Icon\user_icon.svg" />
     <Content Include="Content\Images\home_request_background.png" />

@@ -1,63 +1,79 @@
 ﻿
-    @using Vacation_0._1.Models
-    @model LoginViewModel
-    @{
-        ViewBag.Title = "Log in";
-    }
-    @section menu {}
-
-    <div id="login">
-
-
-        <section id="loginForm">
-            <h2 style="color:#fff">@ViewBag.Title.</h2>
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-    {
-        @Html.AntiForgeryToken()
-        <h4 style="color:#fff">Use a local account to log in.</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="formlogin-group">
-            @*@Html.LabelFor(m => m.Email, new { @class = "col-md-3 control-label" })*@
-            <div class="col">
-                <div class="user-icon">
-                    <embed src="~/Content/Icon/user_icon.svg" />
-                </div>
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="formlogin-group">
-            @*@Html.LabelFor(m => m.Password, new { @class = "col-md-3 control-label" })*@
-            <div class="col">
-                <div class="user-icon">
-                    <embed src="~/Content/Icon/password_icon.svg" />
-                </div>
-                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="formlogin-group">     
-        <div class="col align-self-start">
-            <input type="submit" value="Log in" class="btn btn-block" />
-        </div>
-    </div>
-        <p>
-            @Html.ActionLink("Register as a new user", "Register")
-        </p>
-
+@using Vacation_0._1.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
 }
-        </section>
+@*@section menu {}*@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
 
-        @*<div class="col-md-4">
-                <section id="socialLoginForm">
-                    @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-                </section>
-            </div>*@
+</head>
+<body class="bg">
+    <div >
+        <div id="login">
+
+
+            <section id="loginForm">
+                <embed src="~/Content/Icon/logo_softheme.svg" />
+                @*<h2 style="color:#fff">@ViewBag.Title.</h2>*@
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+
+                    @Html.AntiForgeryToken()
+                    <h4 style="color:#fff"><strong>SOFTHEME</strong> VACATIONS</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="formlogin-group">
+                        @*@Html.LabelFor(m => m.Email, new { @class = "col-md-3 control-label" })*@
+                        <div class="col">
+                            <div class="user-icon">
+                                <embed src="~/Content/Icon/user_icon.svg" />
+                            </div>
+                            @Html.TextBoxFor(m => m.Email, "email", new { @placeholder = "email", @class = "form-control parag bg-login-field" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="formlogin-group">
+                        @*@Html.LabelFor(m => m.Password, new { @class = "col-md-3 control-label" })*@
+                        <div class="col">
+                            <div class="user-icon">
+                                <embed src="~/Content/Icon/password_icon.svg" />
+                            </div>
+                            @Html.PasswordFor(m => m.Password, new { @placeholder = "password", @class = "form-control parag bg-login-field" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="formlogin-group">
+                        <div class="col align-self-start">
+                            <input type="submit" value="LOG IN" class="btn btn-block bg-button-gradient " />
+                        </div>
+                    </div>
+                    <p>
+                        @Html.ActionLink("forgot password?", "Register")
+                    </p>
+
+                }
+            </section>
+
+            @*<div class="col-md-4">
+                    <section id="socialLoginForm">
+                        @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                    </section>
+                </div>*@
+        </div>
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
     </div>
-
-    @section Scripts {
-        @Scripts.Render("~/bundles/jqueryval")
-    }
-    
+    </body>
+</html>
