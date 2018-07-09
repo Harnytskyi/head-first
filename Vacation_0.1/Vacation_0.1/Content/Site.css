@@ -145,6 +145,7 @@ img.user-photo {
     font-size: small;
     color: #878787;
     margin: 0;
+    padding-top: 10px;
 }
 
 div.user-info div {
@@ -281,9 +282,7 @@ div.user-info div {
 }
 
 .close-icon {
-    /*position: absolute;*/
-    vertical-align: middle;
-    
+    vertical-align: middle;    
 }
 
 .close-icon:before {
@@ -309,11 +308,17 @@ div.user-info div {
 .parag {
     padding-left: 35px;
 }
+
+.bg-name-field, .bg-name-field:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #6c757d;
+}
+
 .bg-login-field, .bg-login-field:focus {
     color: #fff;
     background-color: #ffffff26;
     border: transparent;
-    /*opacity: 0.2*/
 }
 .bg-button-gradient {
     background: linear-gradient(to right, #667EEA, #764BA3);
@@ -324,35 +329,8 @@ div.user-info div {
 .badge-border {
     border:medium;
     background-color:cadetblue;
-    border-color: aqua;
     /*border-color: linear-gradient(to right, #667EEA, #764BA3);*/
 }
-
-
-/*.bg-login-field .foom-control-wrong:focus {
-    color: $input-focus-color;
-    background-color: $input-focus-bg;
-    border-color: $input-focus-border-color;
-    outline: 0;
-    // Avoid using mixin so we can pass custom focus shadow properly @if $enable-shadows
-
-{
-    box-shadow: $input-box-shadow, $input-focus-box-shadow;
-}
-
-@else {
-    box-shadow: $input-focus-box-shadow;
-}*/
-/*.demo-preview {
-    padding-top: 60px;
-    padding-bottom: 10px;
-    margin: auto;
-    text-align: center;
-}
-
-    .demo-preview .badge {
-        margin-right: 10px;
-    }*/
 
 .badge {
     display: inline-block;
@@ -373,13 +351,7 @@ div.user-info div {
         background-color: transparent
     }
 
-        
-
-.badge-outline.badge-qwe {
-    border-color: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%), linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%)
-}
 .outlinegradient-small {
-    /*margin: 50px auto;*/
     
     width: auto;
     height: 25px;
@@ -406,7 +378,6 @@ div.user-info div {
 }
 
 /*-------------DIMA - NAVBAR--------------*/
-
 
 div.centr {
     margin-left: auto;

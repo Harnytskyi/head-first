@@ -26,20 +26,9 @@
 </div>
 
 
-@*<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-</div>*@
-
 <div class="col">
 
-    <span class="badge badge-outline outlinegradient-small ">aaaaaaaaaaaaaaaaaaa <embed class=" close-icon close-icon:before" data-dismiss="alert" src="~/Content/Icons/cancel_icon.svg" /></span>
+    <span class="badge badge-outline outlinegradient-small ">Name Surname <embed class=" close-icon close-icon:before" data-dismiss="alert" src="~/Content/Icons/cancel_icon.svg" /></span>
 </div>
 <div class="col">
     <embed class="approvedicon" src="~/Content/Icons/approved_by_icon.svg" align="left" />
@@ -49,144 +38,166 @@
     
 </div>
     @*---------------------KATE ELEMENTS---------------------*@
-
-    <div class="custom-content-form">
-        <div class="form-header indentation">
-            Edit profile
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            One of three columns
         </div>
-        <div class="row" style="margin:0;">
-            <div class="col-md-5 indentation">
-                <div>
-                    <div style="float: left;">
-                        <img src="~/Content/Icons/user_profile_icon.svg" class="user-photo" />
+        <div class="col-8">
+
+            <div class="custom-content-form">
+                <div class="form-header indentation">
+                    Edit profile
+                </div>
+                <div class="row" style="margin:0;">
+                    <div class="col-md-5 indentation">
+
+                        <div>
+                            <div style="float: left;">
+                                <img src="~/Content/Icons/user_profile_icon.svg" class="user-photo" />
+                            </div>
+                            <div class="content-right">
+                                <button type="button" class="btn btn-primary">Edit photo</button>
+                            </div>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div>
+                            <p class="signature">
+                                name
+                            </p>
+                            <input class="form-control bg-login-field" placeholder="name" type="text" value="">
+
+                            <p class="signature">
+                                surname
+                            </p>
+                            <input class="form-control bg-login-field" placeholder="name" type="text" value="">
+
+                            <p class="signature">
+                                job title
+                            </p>
+                            <div class="dropdown custom-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+
+                            <p class="signature">
+                                status
+                            </p>
+                            <div class="dropdown custom-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+
+                            <p class="signature">
+                                days in vacation
+                            </p>
+                            <div class="dropdown custom-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <p class="signature">
+                                date start
+                            </p>
+                            <input id="datepicker" style="background-color: #2E2E2E;" />
+                        </div>
+
                     </div>
-                    <div class="content-right">
-                        <button type="button" class="btn btn-primary">Edit photo</button>
+                    <div class="col-md-7 indentation">
+                        erwer
                     </div>
                 </div>
-                <div style="clear:both;"></div>
-                <div>
-                    <p class="signature">
-                        name
-                    </p>
-                    <input id="datepicker" style="background-color: #2E2E2E;" />
-                    <p class="signature">
-                        surname
-                    </p>
-                    <input id="datepicker2" style="background-color: #2E2E2E;" />
+            </div>
 
-                    <p class="signature">
-                        job title
-                    </p>
-                    <div class="dropdown custom-dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+            <br />
+
+            <div class="custom-content-form">
+                <div class="form-header indentation">
+                    My profile
+                    <a href="#"><img src="~/Content/Icons/edit_icon_grey.svg" class="edit-link" alt="Edit"></a>
+                </div>
+                <div class="user-main-info indentation">
+                    <div>
+                        <div style="float: left;">
+                            <img src="~/Content/Icons/user_profile_icon.svg" class="user-photo" />
                         </div>
-                    </div>
-
-                    <p class="signature">
-                        status
-                    </p>
-                    <div class="dropdown custom-dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-
-                    <p class="signature">
-                        days in vacation
-                    </p>
-                    <div class="dropdown custom-dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="content-right">
+                            <div class="user-surname">
+                                Name Surname
+                            </div>
+                            <div class="user-job-title">
+                                Job title
+                            </div>
+                            <div class="user-status">
+                                status
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="user-info">
+                    <div>
+                        <p class="signature">
+                            date of birth
+                        </p>
+                        <p class="profile-content">
+                            xx month
+                        </p>
+                    </div>
+                    <div>
+                        <p class="signature">
+                            personal email
+                        </p>
+                        <p class="profile-content">
+                            example email
+                        </p>
+                    </div>
+                    <div>
+                        <p class="signature">
+                            phone number
+                        </p>
+                        <p class="profile-content">
+                            +380936846845
+                        </p>
+                    </div>
+                    <div>
+                        <p class="signature">
+                            skype
+                        </p>
+                        <p class="profile-content">
+                            myskype
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            </div>
-            <div class="col-md-7 indentation">
-                erwer
-            </div>
         </div>
-
-
+        <div class="col-2">
+            One of three columns
+        </div>
     </div>
+
+    
 
     <br />
 
-    <div class="custom-content-form">
-        <div class="form-header indentation">
-            My profile
-            <a href="#"><img src="~/Content/Icons/edit_icon_grey.svg" class="edit-link" alt="Edit"></a>
-        </div>
-        <div class="user-main-info indentation">
-            <div>
-                <div style="float: left;">
-                    <img src="~/Content/Icons/user_profile_icon.svg" class="user-photo" />
-                </div>
-                <div class="content-right">
-                    <div class="user-surname">
-                        Name Surname
-                    </div>
-                    <div class="user-job-title">
-                        Job title
-                    </div>
-                    <div class="user-status">
-                        status
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="user-info">
-            <div>
-                <p class="signature">
-                    date of birth
-                </p>
-                <p class="profile-content">
-                    xx month
-                </p>
-            </div>
-            <div>
-                <p class="signature">
-                    personal email
-                </p>
-                <p class="profile-content">
-                    example email
-                </p>
-            </div>
-            <div>
-                <p class="signature">
-                    phone number
-                </p>
-                <p class="profile-content">
-                    +380936846845
-                </p>
-            </div>
-            <div>
-                <p class="signature">
-                    skype
-                </p>
-                <p class="profile-content">
-                    myskype
-                </p>
-            </div>
-        </div>
-    </div>
+    
 
     @*<input id="datepicker" width="276" style="background-color: #2E2E2E;" />*@
 
@@ -200,3 +211,5 @@
             <a class="dropdown-item" href="#">Something else here</a>
         </div>
     </div>
+
+</div>
