@@ -22,7 +22,7 @@
 
 
             <section id="loginForm">
-                <embed src="~/Content/Icon/logo_softheme.svg" />
+                <embed src="~/Content/Icons/logo_softheme.svg" />
                 @*<h2 style="color:#fff">@ViewBag.Title.</h2>*@
                 @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                 {
@@ -35,7 +35,7 @@
                         @*@Html.LabelFor(m => m.Email, new { @class = "col-md-3 control-label" })*@
                         <div class="col">
                             <div class="user-icon">
-                                <embed src="~/Content/Icon/user_icon.svg" />
+                                <embed src="~/Content/Icons/user_icon.svg" />
                             </div>
                             @Html.TextBoxFor(m => m.Email, "email", new { @placeholder = "email", @class = "form-control parag bg-login-field" })
                             @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
@@ -45,7 +45,7 @@
                         @*@Html.LabelFor(m => m.Password, new { @class = "col-md-3 control-label" })*@
                         <div class="col">
                             <div class="user-icon">
-                                <embed src="~/Content/Icon/password_icon.svg" />
+                                <embed src="~/Content/Icons/password_icon.svg" />
                             </div>
                             @Html.PasswordFor(m => m.Password, new { @placeholder = "password", @class = "form-control parag bg-login-field" })
                             @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
