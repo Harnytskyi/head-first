@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 120px;
     padding-bottom: 20px;
-    background-color: #333;
+    background-color: #222;
     
 }
 
@@ -52,7 +52,52 @@ textarea {
     background-size: cover;
     width: 100%;
     /*height: 100%;*/
+
+
 }
+/*--------table------*/
+.bg-grey{
+    background-color: #2E2E2E;
+    border-color: #878787;
+    border-radius: 12px;
+}
+
+.table-header {
+    background-color: #222222;
+    border-radius: 12px 12px 0px 0px;
+    font-family: Muli-Bold;
+    color: #FCFCFC;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+}
+
+.table-text-primary {
+    color: #e8e8e8;
+}
+
+.table-text-secondary {
+    color: #878787;
+    font-family: 'Muli-SemiBold';
+    text-align: center;
+}
+
+.table-signature {
+    font-size: small;
+    
+}
+
+    .table-signature th {
+        border-bottom: none !important;
+    }
+
+.table-text-green {
+    color: #2cf6b8;
+}
+
+.table-text-red {
+    color: #ea6676;
+}
+
 /*--------------KATE ELEMENTS------------*/
 @font-face {
     font-family: Muli-SemiBold;
