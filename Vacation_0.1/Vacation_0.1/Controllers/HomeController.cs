@@ -10,6 +10,7 @@ namespace Vacation_0._1.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.ActiveMenu = "#index";
             return View();
         }
 
@@ -27,6 +28,11 @@ namespace Vacation_0._1.Controllers
             return View();
         }
         public ActionResult Loglog()
+        {
+            return View();
+        }
+
+        public ActionResult MyProfile()
         {
             return View();
         }

@@ -9,11 +9,23 @@
     
 </head>
 <body>
-   
+ <script>
+     var activeMenu = '@ViewBag.ActiveMenu';
+
+     console.log(location)
+
+     if (location.contains('page1')) {
+         getElementById('menuIndex').setCssClass('acctive')
+       else if (location.contains('page2'))
+             getElementById('menuIndex2').setCssClass('acctive')
+
+     }
+ </script>
+
     <nav class="navbar navbar-expand-lg navbar-light mynav">
         <div class="container" style="margin-left:10%; margin-right:10%">
             @*brand*@
-            <a class="navbar-brand" href="#"> <img src="~/Content/Icons/logo_softheme.svg" class="new-img" width="30" height="30" alt=""> SOFTHEME VOCATIONS</a>
+            <a class="navbar-brand" href="~/Home"> <img src="~/Content/Icons/logo_softheme.svg" class="new-img" width="30" height="30" alt=""> SOFTHEME VOCATIONS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,7 +34,7 @@
                 <ul class="navbar-nav mr-auto centr">
                     @*link1*@
                     <li class="nav-item">
-                        <a id="lined" class="nav-link" href="#">My Profile</a>
+                        <a id="lined" class="nav-link" href="~/Home/MyProfile">My Profile</a>
 
                     </li>
                     @*link2*@
