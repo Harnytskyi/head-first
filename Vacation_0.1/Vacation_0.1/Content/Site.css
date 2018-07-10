@@ -312,12 +312,12 @@ div.user-info div {
 .bg-name-field, .bg-name-field:focus {
     color: #fff;
     background-color: transparent;
-    border-color: #6c757d;
+    border: 1px solid #6c757d;
 }
 
 .bg-login-field, .bg-login-field:focus {
-    color: #fff;
-    background-color: #ffffff26;
+    color: #E4E4E4;
+    background-color: #2E2E2E;
     border: transparent;
 }
 .bg-button-gradient {
@@ -351,8 +351,16 @@ div.user-info div {
         background-color: transparent
     }
 
+.btn-outline-fiolet {
+    /*width: 140px;
+    height: 40px;*/
+    background-color: transparent;
+    border-color: #667eea;
+    color: #667eea;
+    font-family: 'Muli-Bold';
+}
+
 .outlinegradient-small {
-    
     width: auto;
     height: 25px;
     border-left: 1px solid #667EEA;
@@ -368,14 +376,15 @@ div.user-info div {
     /*margin: 50px auto;*/
     width: 245px;
     height: 70px;
-    border-left: 1px solid #667EEA;
-    border-right: 1px solid #754BA2;
-    background-position: 0 0, 0 100%;
+    border-top: 1px solid #667EEA;
+    border-bottom: 1px solid #764BA2;
+    background-position: 0 0, 100% 0;
     background-repeat: no-repeat;
     border-radius: 6px;
-    background-size: 100% 1px;
-    background-image: linear-gradient(to right, #667EEA 0%, #754BA2 100%), linear-gradient(to right, #667EEA 0%, #754BA2 100%);
+    background-size: 1px 100%;
+    background-image: linear-gradient(to bottom, #667EEA 0%, #764BA2 100%), linear-gradient(to bottom, #667EEA 0%, #764BA2 100%);
 }
+
 
 /*-------------DIMA - NAVBAR--------------*/
 
