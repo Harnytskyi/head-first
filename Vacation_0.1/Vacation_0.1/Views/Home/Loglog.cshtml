@@ -282,14 +282,110 @@
         <br>
         <div class="card bg-grey">
             <div class="table-header">Panel heading</div>
-            
-                <table class="table table-hover table-text-secondary">
-                    <thead> <tr class="table-signature"> <th>vacation dates</th> <th>description</th> <th>status</th> <th>vacation balance</th> </tr> </thead>
-                    <tbody>
-                        <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-green">Approved</td> <td class="table-text-primary">XX days</td> </tr>
-                        <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-red">Denied</td> <td class="table-text-primary">XX days</td> </tr>
-                        <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td  class="table-text-green">Approved</td> <td class="table-text-primary">XX says</td> </tr>
-                    </tbody>
-                </table>
+
+            <table class="table table-hover table-text-secondary">
+                <thead> <tr class="table-signature"> <th>vacation dates</th> <th>description</th> <th>status</th> <th>vacation balance</th> </tr> </thead>
+                <tbody>
+                    <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-green">Approved</td> <td class="table-text-primary">XX days</td> </tr>
+                    <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-red">Denied</td> <td class="table-text-primary">XX days</td> </tr>
+                    <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-green">Approved</td> <td class="table-text-primary">XX says</td> </tr>
+                </tbody>
+            </table>
+        </div>
+        <br />
+        <div class="custom-content-form">
+            <div class="form-header indentation">
+                Vacation request
+            </div>
+            <div class="row" style="margin:0;">
+                <div class="col-md-6 indentation">
+
+                  
+                <div style="clear:both;"></div>
+                <div>
+                    <p class="signature">
+                        vacation type
+                    </p>
+                    <div class="dropdown custom-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <p class="signature">
+                        comment
+                    </p>
+                    <textarea rows="10" cols="45" name="text"></textarea>
+
+                    @*<p class="signature">
+                        job title
+                    </p>
+                    <div class="dropdown custom-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <p class="signature">
+                        status
+                    </p>
+                    <div class="dropdown custom-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <p class="signature">
+                        days in vacation
+                    </p>
+                    <div class="dropdown custom-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <p class="signature">
+                        date start
+                    </p>
+                    <input id="datepicker" style="background-color: #2E2E2E;" />*@
+                </div>
+                            
+
+                </div>
+                <div class="col-md-6 indentation">
+                    <p class="signature">
+                        from
+                    </p>
+                    <input id="datepicker" style="background-color: #2E2E2E;" />
+
+                    <p class="signature">
+                        to
+                    </p>
+                    <input id="datepicker" style="background-color: #2E2E2E;" />
+                    <p class="signature">
+                        amount
+                    </p>
+                    <input class="form-control bg-name-field" placeholder="Name" cols="2" type="text" value="">
+                </div>
+            </div>
         </div>
     </div>
