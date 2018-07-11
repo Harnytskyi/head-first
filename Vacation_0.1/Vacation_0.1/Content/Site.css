@@ -381,9 +381,16 @@ div.user-info div {
     color: white;
 }
 
+.bg-button-cancel{
+    background-color:transparent;
+    border-width: 1px;
+    color: #EEEEEE;
+    border-color: #878787;
+}
+
 .badge-border {
-    border:medium;
-    background-color:cadetblue;
+    border: medium;
+    background-color: cadetblue;
     /*border-color: linear-gradient(to right, #667EEA, #764BA3);*/
 }
 
@@ -440,7 +447,12 @@ div.user-info div {
     background-image: linear-gradient(to bottom, #667EEA 0%, #764BA2 100%), linear-gradient(to bottom, #667EEA 0%, #764BA2 100%);
 }
 
-
+.field-width{
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+    
+}
 /*-------------DIMA - NAVBAR--------------*/
 
 div.centr {
