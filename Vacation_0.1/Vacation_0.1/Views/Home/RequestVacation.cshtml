@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "MyProfile";
+    ViewBag.Title = "RequestVacation";
 }
 
 <div class="container">
@@ -71,19 +71,59 @@
                 <p class="align-text-bottom">days available</p>
                 <p><a class="btn btn-primary btn-lg align-content-md-center bg-button-gradient" href="#" role="button">REQUEST VACATION</a></p>
             </div>
-            <div class="card bg-grey">
-                <div class="table-header">Panel heading</div>
 
-                <table class="table table-hover table-text-secondary">
-                    <thead> <tr class="table-signature"> <th align="right">vacation dates</th> <th>description</th> <th>status</th> <th>vacation balance</th> </tr> </thead>
-                    <tbody>
-                        <tr> <th scope=row class="table-text-primary" align="left">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-green">Approved</td> <td class="table-text-primary">XX days</td> </tr>
-                        <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-red">Denied</td> <td class="table-text-primary">XX days</td> </tr>
-                        <tr> <th scope=row class="table-text-primary">XX/XX/XX - XX/XX/XX</th> <td>Vacation</td> <td class="table-text-green">Approved</td> <td class="table-text-primary">XX says</td> </tr>
-                    </tbody>
-                </table>
+            <div class="custom-content-form">
+                <div class="form-header indentation">
+                    Vacation request
+                </div>
+                <div class="row" style="margin:0;">
+                    <div class="col-md-6 indentation">
+
+
+                        <div style="clear:both;"></div>
+                        <div>
+                            <p class="signature">
+                                vacation type
+                            </p>
+                            <div class="dropdown custom-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+
+                            <p class="signature">
+                                comment
+                            </p>
+                            <p><textarea rows="5" cols="45" class="form-control bg-name-field" name="text"></textarea></p>
+                            <p align="right"><a class="btn btn-lg bg-button-cancel align-content-md-center " href="#" role="button">CANCEL</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 indentation">
+                        <p class="signature">
+                            from
+                        </p>
+                        <input id="datepicker" class="form-control" style="background-color: #2E2E2E;" />
+
+                        <p class="signature">
+                            to
+                        </p>
+                        <input id="datepicker2" class="form-control" style="background-color: #2E2E2E;" />
+                        <p class="signature">
+                            amount
+                        </p>
+                        <p><input type="text" class="form-control bg-name-field field-width" placeholder="XX" maxlength="2">days in vacation</p>
+                        <p><a class="btn btn-lg align-content-md-center bg-button-gradient" href="#" role="button">SEND REQUEST</a></p>
+                    </div> 
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
